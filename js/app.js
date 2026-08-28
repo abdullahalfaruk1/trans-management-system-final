@@ -44,5 +44,14 @@ const SM = {
         localStorage.setItem(this.key, JSON.stringify(data));
         return data;
     },
+    save(data) { localStorage.setItem(this.key, JSON.stringify(data)); },
+    nextId(arr) { return arr.length ? Math.max(...arr.map(x => Number(x.id) || 0)) + 1 : 1; },
+    esc(v) { return String(v ?? "").replace(/[&<>"']/g, m => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[m])); },
+    badge(status) {
+        const s = String(status || "").toLowerCase();
+        const cls = s.includes("active") || s.includes("available") || s.includes("confirmed") || s.includes("completed") ? "success" : s.includes("maintenance") || s.includes("busy") || s.includes("scheduled") ? "warning" : s.includes("running") ? "info" : s.includes("cancel") || s.includes("inactive") ? "danger" : "gray";
+        return `<span class="badge ${cls}">${this.esc(status)}</span>`;
+    },
+
 
 }
