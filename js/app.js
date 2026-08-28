@@ -18,6 +18,10 @@ const SM = {
                 { id: 1, name: "Abdullah", email: "abdullah@example.com", phone: "01810000001", status: "Active" },
                 { id: 2, name: "Nusrat Jahan", email: "nusrat@example.com", phone: "01810000002", status: "Active" }
             ],
+            routes: [
+                { id: 1, name: "Dhaka - Chattogram", start: "Dhaka", destination: "Chattogram", distance: 242, time: 360 },
+                { id: 2, name: "Dhaka - Sylhet", start: "Dhaka", destination: "Sylhet", distance: 240, time: 330 }
+            ],
 
 
         }
