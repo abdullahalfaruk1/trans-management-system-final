@@ -14,6 +14,11 @@ const SM = {
                 { id: 2, name: "Karim Hasan", phone: "01710000002", license: "DL-1002", experience: 5, status: "Busy" },
                 { id: 3, name: "Sakib Khan", phone: "01710000003", license: "DL-1003", experience: 9, status: "Available" }
             ],
+            passengers: [
+                { id: 1, name: "Abdullah", email: "abdullah@example.com", phone: "01810000001", status: "Active" },
+                { id: 2, name: "Nusrat Jahan", email: "nusrat@example.com", phone: "01810000002", status: "Active" }
+            ],
+
 
         }
     }
