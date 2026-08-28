@@ -22,6 +22,17 @@ const SM = {
                 { id: 1, name: "Dhaka - Chattogram", start: "Dhaka", destination: "Chattogram", distance: 242, time: 360 },
                 { id: 2, name: "Dhaka - Sylhet", start: "Dhaka", destination: "Sylhet", distance: 240, time: 330 }
             ],
+            trips: [
+                { id: 1, route: "Dhaka - Chattogram", vehicle: "DHK-GA-1010", driver: "Rahim Ahmed", date: "2026-08-22", time: "08:00", status: "Scheduled" },
+                { id: 2, route: "Dhaka - Sylhet", vehicle: "DHK-TA-2020", driver: "Karim Hasan", date: "2026-08-22", time: "09:30", status: "Running" }
+            ],
+            bookings: [
+                { id: 1, passenger: "Abdullah", trip: "Dhaka - Chattogram", seat: "A1", fare: 850, status: "Confirmed" },
+                { id: 2, passenger: "Nusrat Jahan", trip: "Dhaka - Sylhet", seat: "B2", fare: 800, status: "Confirmed" }
+            ],
+            fuel: [
+                { id: 1, vehicle: "DHK-GA-1010", date: "2026-08-20", type: "Diesel", liters: 80, price: 110, total: 8800 }
+            ],
 
 
         }
