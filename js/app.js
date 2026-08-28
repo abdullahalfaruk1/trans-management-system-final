@@ -52,6 +52,7 @@ const SM = {
         const cls = s.includes("active") || s.includes("available") || s.includes("confirmed") || s.includes("completed") ? "success" : s.includes("maintenance") || s.includes("busy") || s.includes("scheduled") ? "warning" : s.includes("running") ? "info" : s.includes("cancel") || s.includes("inactive") ? "danger" : "gray";
         return `<span class="badge ${cls}">${this.esc(status)}</span>`;
     },
+    toast(msg) { const t = document.createElement("div"); t.className = "toast"; t.textContent = msg; document.body.appendChild(t); setTimeout(() => t.remove(), 2200); }
+};
 
 
-}
