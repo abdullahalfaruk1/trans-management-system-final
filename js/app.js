@@ -33,8 +33,16 @@ const SM = {
             fuel: [
                 { id: 1, vehicle: "DHK-GA-1010", date: "2026-08-20", type: "Diesel", liters: 80, price: 110, total: 8800 }
             ],
+            maintenance: [
+                { id: 1, vehicle: "DHK-GA-3030", date: "2026-08-21", description: "Engine servicing", cost: 18000, next: "2026-11-21", status: "Completed" }
+            ],
+            expenses: [
+                { id: 1, vehicle: "DHK-GA-1010", type: "Toll", description: "Highway toll", amount: 2500, date: "2026-08-22" },
+                { id: 2, vehicle: "DHK-TA-2020", type: "Repair", description: "Brake check", amount: 5000, date: "2026-08-21" }
+            ]
+        };
+        localStorage.setItem(this.key, JSON.stringify(data));
+        return data;
+    },
 
-
-        }
-    }
 }
