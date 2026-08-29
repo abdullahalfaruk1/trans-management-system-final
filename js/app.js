@@ -88,3 +88,13 @@ function shell(title, subtitle, active) {
     </section>
   </div>`;
 }
+function logout() { localStorage.removeItem("smartmove_logged"); location.href = "index.html"; }
+function requireLogin() { if (!localStorage.getItem("smartmove_logged")) location.href = "index.html"; }
+
+if (document.getElementById("loginForm")) {
+    document.getElementById("loginForm").addEventListener("submit", e => {
+        e.preventDefault();
+        localStorage.setItem("smartmove_logged", "1");
+        location.href = "dashboard.html";
+    });
+} else requireLogin();
