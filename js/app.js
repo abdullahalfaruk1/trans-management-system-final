@@ -55,4 +55,36 @@ const SM = {
     toast(msg) { const t = document.createElement("div"); t.className = "toast"; t.textContent = msg; document.body.appendChild(t); setTimeout(() => t.remove(), 2200); }
 };
 
-
+function shell(title, subtitle, active) {
+    document.getElementById("app").innerHTML = `
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">🚍 <span>SmartMove</span></div>
+      <div class="nav-title">Main</div>
+      <a class="nav-link ${active === "dashboard" ? "active" : ""}" href="dashboard.html"><span class="nav-icon">📊</span>Dashboard</a>
+      <div class="nav-title">Management</div>
+      <a class="nav-link ${active === "vehicles" ? "active" : ""}" href="vehicles.html"><span class="nav-icon">🚌</span>Vehicles</a>
+      <a class="nav-link ${active === "drivers" ? "active" : ""}" href="drivers.html"><span class="nav-icon">👨‍✈️</span>Drivers</a>
+      <a class="nav-link ${active === "passengers" ? "active" : ""}" href="passengers.html"><span class="nav-icon">👥</span>Passengers</a>
+      <a class="nav-link ${active === "routes" ? "active" : ""}" href="routes.html"><span class="nav-icon">🗺️</span>Routes</a>
+      <a class="nav-link ${active === "trips" ? "active" : ""}" href="trips.html"><span class="nav-icon">🕒</span>Trips</a>
+      <a class="nav-link ${active === "bookings" ? "active" : ""}" href="bookings.html"><span class="nav-icon">🎫</span>Bookings</a>
+      <div class="nav-title">Finance & Service</div>
+      <a class="nav-link ${active === "fuel" ? "active" : ""}" href="fuel.html"><span class="nav-icon">⛽</span>Fuel</a>
+      <a class="nav-link ${active === "maintenance" ? "active" : ""}" href="maintenance.html"><span class="nav-icon">🔧</span>Maintenance</a>
+      <a class="nav-link ${active === "expenses" ? "active" : ""}" href="expenses.html"><span class="nav-icon">💰</span>Expenses</a>
+      <a class="nav-link ${active === "reports" ? "active" : ""}" href="reports.html"><span class="nav-icon">📈</span>Reports</a>
+    </aside>
+    <section class="main">
+      <header class="topbar">
+        <button class="menu-btn" onclick="document.getElementById('sidebar').classList.toggle('open')">☰</button>
+        <div><strong>${title}</strong></div>
+        <div class="user"><span>Admin</span><div class="avatar">A</div><button class="btn small danger" onclick="logout()">Logout</button></div>
+      </header>
+      <main class="content">
+        <div class="page-head"><div><h1>${title}</h1><p>${subtitle}</p></div></div>
+        <div id="pageContent"></div>
+      </main>
+    </section>
+  </div>`;
+}
