@@ -18,3 +18,10 @@ function row(x) {
     const vals = window._rowVals(x);
     return vals.map((v, i) => `<td>${i === vals.length - 1 && "maintenance" !== "routes" && "maintenance" !== "fuel" && "maintenance" !== "maintenance" && "maintenance" !== "expenses" ? SM.badge(v) : SM.esc(v)}</td>`).join("");
 }
+window._rowVals = function (x) {
+    return [x.vehicle, x.date, x.description, '৳' + Number(x.cost).toLocaleString(), x.next, x.status];
+};
+function openForm(item = null) {
+    const modal = document.getElementById("modal"); modal.classList.add("show");
+    document.getElementById("modalTitle").textContent = item ? "Edit" : "Add";
+    const form = document.getElementById("entityForm");
