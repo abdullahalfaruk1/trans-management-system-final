@@ -39,3 +39,7 @@ function openForm(item = null) {
         data.maintenance = items; SM.save(data); closeForm(); render(document.getElementById("search")?.value || ""); SM.toast("Saved successfully");
     };
 }
+function closeForm() { document.getElementById("modal")?.classList.remove("show") }
+function editItem(id) { openForm(items.find(x => x.id === id)) }
+function deleteItem(id) { if (confirm("Delete this record?")) { items = items.filter(x => x.id !== id); data.maintenance = items; SM.save(data); render(); SM.toast("Deleted successfully") } }
+render();
