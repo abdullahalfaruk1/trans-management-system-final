@@ -9,3 +9,12 @@ function render(filter = "") {
   <div class="table-wrap"><table class="table"><thead><tr>$<th>Vehicle</th><th>Date</th><th>Description</th><th>Cost</th><th>Next Service</th><th>Status</th><th>Actions</th></tr></thead>
   <tbody>${filtered.length ? filtered.map(x => `<tr>${row(x)}<td class="actions"><button class="btn small secondary" onclick="editItem(${x.id})">Edit</button><button class="btn small danger" onclick="deleteItem(${x.id})">Delete</button></td></tr>`).join("") : `<tr><td colspan="$7" class="empty">No records found.</td></tr>`}</tbody></table></div>
  </div>
+  <div class="modal" id="modal"><div class="modal-box"><div class="modal-head"><h3 id="modalTitle">Add</h3><button class="close" onclick="closeForm()">×</button></div>
+ <form id="entityForm" class="form-grid"></form></div></div>`;
+    document.getElementById("search").addEventListener("input", e => render(e.target.value));
+}
+function row(x) {
+    const cells = [];
+    const vals = window._rowVals(x);
+    return vals.map((v, i) => `<td>${i === vals.length - 1 && "maintenance" !== "routes" && "maintenance" !== "fuel" && "maintenance" !== "maintenance" && "maintenance" !== "expenses" ? SM.badge(v) : SM.esc(v)}</td>`).join("");
+}
