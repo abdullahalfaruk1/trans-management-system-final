@@ -5,8 +5,15 @@ function render(filter = "") {
     const filtered = items.filter(x => JSON.stringify(x).toLowerCase().includes(filter.toLowerCase()));
     document.getElementById("pageContent").innerHTML = `
  <div class="panel">
-  <div class="toolbar"><input class="search" id="search" placeholder="Search fuel..." value="${SM.esc(filter)}"><button class="btn primary" onclick="openForm()">+ Add Fuel Record</button></div>
-  <div class="table-wrap"><table class="table"><thead><tr>$<th>Vehicle</th><th>Date</th><th>Fuel</th><th>Liters</th><th>Price/Liter</th><th>Total</th><th>Actions</th></tr></thead>
+  <div class="toolbar">
+  <input class="search" id="search" placeholder="Search fuel..." value="${SM.esc(filter)}">
+  <button class="btn primary" onclick="openForm()">
+  + Add Fuel Record
+  </button>
+  </div>
+  <div class="table-wrap">
+  <table class="table"><thead><tr>$<th>Vehicle</th><th>Date</th><th>Fuel</th>
+  <th>Liters</th><th>Price/Liter</th><th>Total</th><th>Actions</th></tr></thead>
   <tbody>${filtered.length ? filtered.map(x => `<tr>${row(x)}<td class="actions"><button class="btn small secondary" onclick="editItem(${x.id})">Edit</button><button class="btn small danger" onclick="deleteItem(${x.id})">Delete</button></td></tr>`).join("") : `<tr><td colspan="$7" class="empty">No records found.</td></tr>`}</tbody></table></div>
  </div>
  <div class="modal" id="modal"><div class="modal-box"><div class="modal-head"><h3 id="modalTitle">Add</h3><button class="close" onclick="closeForm()">×</button></div>
@@ -34,3 +41,7 @@ function openForm(item = null) {
         data.fuel = items; SM.save(data); closeForm(); render(document.getElementById("search")?.value || ""); SM.toast("Saved successfully");
     };
 }
+function closeForm() { document.getElementById("modal")?.classList.remove("show") }
+function editItem(id) { openForm(items.find(x => x.id === id)) }
+function deleteItem(id) { if (confirm("Delete this record?")) { items = items.filter(x => x.id !== id); data.fuel = items; SM.save(data); render(); SM.toast("Deleted successfully") } }
+render();
