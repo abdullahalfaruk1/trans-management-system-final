@@ -13,3 +13,11 @@ function render(filter = "") {
  <form id="entityForm" class="form-grid"></form></div></div>`;
     document.getElementById("search").addEventListener("input", e => render(e.target.value));
 }
+function row(x) {
+    const cells = [];
+    const vals = window._rowVals(x);
+    return vals.map((v, i) => `<td>${i === vals.length - 1 && "expenses" !== "routes" && "expenses" !== "fuel" && "expenses" !== "maintenance" && "expenses" !== "expenses" ? SM.badge(v) : SM.esc(v)}</td>`).join("");
+}
+window._rowVals = function (x) {
+    return [x.vehicle, x.type, x.description, '৳' + Number(x.amount).toLocaleString(), x.date];
+};
