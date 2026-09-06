@@ -16,3 +16,9 @@ document.getElementById("pageContent").innerHTML = `
 <div class="chart">${d.expenses.map(x => `<div class="bar" style="height:${Math.max(10, Number(x.amount) / max * 190)}px" title="${SM.esc(x.description)}"><span>${SM.esc(x.type)}</span></div>`).join("")}</div></div>
 <div class="panel"><div class="panel-head"><h3>Fleet Summary</h3></div>
 <table class="table"><tbody>
+<tr><td>Active</td><td>${d.vehicles.filter(x => x.status === "Active").length}</td></tr>
+<tr><td>Maintenance</td><td>${d.vehicles.filter(x => x.status === "Maintenance").length}</td></tr>
+<tr><td>Total Drivers</td><td>${d.drivers.length}</td></tr>
+<tr><td>Total Routes</td><td>${d.routes.length}</td></tr>
+</tbody></table></div>
+</div>`;
