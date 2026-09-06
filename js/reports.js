@@ -11,3 +11,8 @@ document.getElementById("pageContent").innerHTML = `
 
 <div class="stat-card"><h4>Bookings</h4><div class="value">${d.bookings.length}</div></div>
 </div>
+<div class="grid-2">
+<div class="panel"><div class="panel-head"><h3>Expense Distribution</h3></div>
+<div class="chart">${d.expenses.map(x => `<div class="bar" style="height:${Math.max(10, Number(x.amount) / max * 190)}px" title="${SM.esc(x.description)}"><span>${SM.esc(x.type)}</span></div>`).join("")}</div></div>
+<div class="panel"><div class="panel-head"><h3>Fleet Summary</h3></div>
+<table class="table"><tbody>
