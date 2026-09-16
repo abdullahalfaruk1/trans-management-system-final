@@ -28,3 +28,13 @@ a {
     text-decoration: none;
     color: inherit
 }
+
+button,
+input,
+select {
+    font: inherit
+}
+
+button {
+    cursor: pointer
+}
