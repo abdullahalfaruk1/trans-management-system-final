@@ -91,3 +91,33 @@ button {
     margin: 3px 0;
     font-size: 14px
 }
+
+.nav-link:hover,
+.nav-link.active {
+    background: #1f2937;
+    color: #fff
+}
+
+.nav-icon {
+    width: 20px;
+    text-align: center
+}
+
+.main {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    min-height: 100vh
+}
+
+.topbar {
+    height: 70px;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    position: sticky;
+    top: 0;
+    z-index: 10
+}
