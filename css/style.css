@@ -54,3 +54,16 @@ button {
     z-index: 20;
     transition: .25s
 }
+
+.brand {
+    font-size: 21px;
+    font-weight: 800;
+    padding: 5px 10px 24px;
+    display: flex;
+    gap: 9px;
+    align-items: center
+}
+
+.brand span {
+    letter-spacing: .2px
+}
