@@ -194,3 +194,19 @@ button {
     background: #dcfce7;
     color: #15803d
 }
+
+.btn.small {
+    padding: 7px 10px;
+    font-size: 12px
+}
+
+.btn.full {
+    width: 100%
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 24px
+}
