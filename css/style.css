@@ -179,3 +179,18 @@ button {
     background: var(--primary);
     color: #fff
 }
+
+.btn.secondary {
+    background: #eef2ff;
+    color: #3730a3
+}
+
+.btn.danger {
+    background: #fee2e2;
+    color: #b91c1c
+}
+
+.btn.success {
+    background: #dcfce7;
+    color: #15803d
+}
