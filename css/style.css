@@ -121,3 +121,39 @@ button {
     top: 0;
     z-index: 10
 }
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 24px
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #1d4ed8;
+    display: grid;
+    place-items: center;
+    font-weight: 800
+}
+
+.content {
+    padding: 28px
+}
+
+.page-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 24px
+}
