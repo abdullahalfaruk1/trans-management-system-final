@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+:root {
+    --bg: #f4f7fb;
+    --card: #fff;
+    --text: #172033;
+    --muted: #6b7280;
+    --primary: #2563eb;
+    --dark: #111827;
+    --border: #e5e7eb;
+    --success: #16a34a;
+    --danger: #dc2626;
+    --warning: #d97706
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
