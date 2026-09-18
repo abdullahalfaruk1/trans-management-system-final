@@ -412,3 +412,18 @@ select:focus {
     padding: 30px;
     color: var(--muted)
 }
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: #11182780;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 50
+}
+
+.modal.show {
+    display: flex
+}
