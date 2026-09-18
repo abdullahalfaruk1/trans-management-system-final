@@ -240,3 +240,15 @@ button {
     color: var(--muted);
     font-weight: 600
 }
+
+.stat-card .value {
+    font-size: 27px;
+    font-weight: 800;
+    margin-top: 10px
+}
+
+.trend {
+    font-size: 12px;
+    margin-top: 6px;
+    color: var(--success)
+}
