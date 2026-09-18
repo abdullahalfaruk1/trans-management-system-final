@@ -313,3 +313,36 @@ button {
     font-size: 11px;
     font-weight: 700
 }
+
+.badge.success {
+    background: #dcfce7;
+    color: #166534
+}
+
+.badge.warning {
+    background: #fef3c7;
+    color: #92400e
+}
+
+.badge.danger {
+    background: #fee2e2;
+    color: #991b1b
+}
+
+.badge.info {
+    background: #dbeafe;
+    color: #1e40af
+}
+
+.badge.gray {
+    background: #f3f4f6;
+    color: #4b5563
+}
+
+.toolbar {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    flex-wrap: wrap
+}
