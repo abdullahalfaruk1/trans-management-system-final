@@ -286,3 +286,30 @@ button {
     border-collapse: collapse;
     min-width: 700px
 }
+
+.table th,
+.table td {
+    text-align: left;
+    padding: 13px 12px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px
+}
+
+.table th {
+    color: #6b7280;
+    background: #fafafa;
+    font-size: 12px;
+    text-transform: uppercase
+}
+
+.table tr:hover td {
+    background: #fafafa
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700
+}
