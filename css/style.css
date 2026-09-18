@@ -491,3 +491,21 @@ select:focus {
     padding: 35px;
     box-shadow: 0 15px 40px #061f5512
 }
+
+.center {
+    text-align: center
+}
+
+.muted {
+    color: var(--muted)
+}
+
+.demo-box {
+    margin-top: 18px;
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    padding: 13px;
+    font-size: 12px;
+    line-height: 1.8
+}
