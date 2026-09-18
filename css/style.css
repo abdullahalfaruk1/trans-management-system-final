@@ -272,3 +272,17 @@ button {
     align-items: center;
     margin-bottom: 16px
 }
+
+.panel h3 {
+    font-size: 16px
+}
+
+.table-wrap {
+    overflow: auto
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px
+}
