@@ -450,3 +450,12 @@ select:focus {
     font-size: 24px;
     color: #6b7280
 }
+
+.chart {
+    height: 240px;
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+    padding: 20px 10px 5px;
+    border-top: 1px solid var(--border)
+}
