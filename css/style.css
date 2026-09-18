@@ -210,3 +210,17 @@ button {
     gap: 18px;
     margin-bottom: 24px
 }
+
+.stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 12px #11182708
+}
+
+.stat-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
