@@ -521,3 +521,13 @@ select:focus {
     z-index: 100;
     box-shadow: 0 5px 20px #0003
 }
+
+@media(max-width:1000px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr
+    }
+}
