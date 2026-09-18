@@ -476,3 +476,18 @@ select:focus {
     font-size: 11px;
     color: #6b7280
 }
+
+.auth-page {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #eff6ff, #f8fafc)
+}
+
+.auth-card {
+    width: min(420px, 92%);
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 15px 40px #061f5512
+}
