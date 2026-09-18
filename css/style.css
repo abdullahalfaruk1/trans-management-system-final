@@ -459,3 +459,20 @@ select:focus {
     padding: 20px 10px 5px;
     border-top: 1px solid var(--border)
 }
+
+.bar {
+    flex: 1;
+    background: #2563eb;
+    border-radius: 6px 6px 0 0;
+    min-height: 10px;
+    position: relative
+}
+
+.bar span {
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    color: #6b7280
+}
