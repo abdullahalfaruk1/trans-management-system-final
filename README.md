@@ -32,13 +32,23 @@ Page Link: https://abdullahalfaruk1.github.io/trans-management-system-final/
 ✨ Features & Modules:
 
 📊 Dashboard
+
 🚗 Vehicle Management
+
 👨‍✈️ Driver Management
+
 👥 Passenger Management
+
 🛣️ Route Management
+
 🚌 Trip Management
+
 🎫 Booking Management
+
 ⛽ Fuel Management
+
 🔧 Maintenance Management
+
 💰 Expense Management
+
 📈 Reports & Analytics
