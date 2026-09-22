@@ -69,4 +69,12 @@ A modern frontend demo for SmartMove, an Intelligent Transport Management System
 
 
 
+   
+📄 Project Status
+
+       Current Status: Frontend Demo / Prototype
+
+       The current version is intended for demonstration and development purposes. Backend and database integration can be added in the next development phase.
+
+
    Hope for the best for next project...It will be continue.....
