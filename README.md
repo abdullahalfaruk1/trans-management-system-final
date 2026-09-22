@@ -26,10 +26,11 @@ A modern frontend demo for SmartMove, an Intelligent Transport Management System
  
 ##### Password: `admin123`
 
- Note: These credentials are provided for demonstration purposes only.
 
- Page Link: https://abdullahalfaruk1.github.io/trans-management-system-final/
+Page Link: https://abdullahalfaruk1.github.io/trans-management-system-final/
 
+
+Note: These credentials are provided for demonstration purposes only.
 
 
 
