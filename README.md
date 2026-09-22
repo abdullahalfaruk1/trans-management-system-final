@@ -65,15 +65,15 @@ Page Link: https://abdullahalfaruk1.github.io/trans-management-system-final/
 
 ### 🏗️ Technology Direction
 
-  #### Frontend
+   #### Frontend
    
-   HTML5
+     HTML5
    
-   CSS3
+     CSS3
    
-   JavaScript
+     JavaScript
    
-   Browser LocalStorage
+     Browser LocalStorage
 
 
 
