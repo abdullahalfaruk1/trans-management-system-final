@@ -1,8 +1,8 @@
-🚍 SmartMove — Intelligent Transport Management System
+## 🚍 SmartMove — Intelligent Transport Management System
 
 A modern frontend demo for SmartMove, an Intelligent Transport Management System designed to manage vehicles, drivers, passengers, routes, trips, bookings, fuel, maintenance, expenses, and reports.
 
-📌 Project Overview 
+## 📌 Project Overview 
 
  SmartMove is a frontend-based transport management system designed with a clean and organized interface for managing core transportation operations.
 
@@ -10,7 +10,7 @@ A modern frontend demo for SmartMove, an Intelligent Transport Management System
 
  The frontend can later be integrated with a Spring Boot REST API for persistent database storage and server-side operations.
 
-🚀 Getting Started
+## 🚀 Getting Started
 
  1. Launch the Application
 
