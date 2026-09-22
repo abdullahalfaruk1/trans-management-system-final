@@ -12,18 +12,18 @@ A modern frontend demo for SmartMove, an Intelligent Transport Management System
 
 ## 🚀 Getting Started
 
- 1. Launch the Application
+# 1. Launch the Application
 
-   Open:
+  Open:
 
-   index.html
+  index.html
 
-   in any modern web browser.
+  in any modern web browser.
 
- 2. Demo Credentials
+# 2. Demo Credentials
    
-     Email:    admin@smartmove.com
-     Password: admin123
+ Email:    admin@smartmove.com
+ Password: admin123
 
  Note: These credentials are provided for demonstration purposes only.
 
