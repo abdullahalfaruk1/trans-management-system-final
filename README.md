@@ -23,6 +23,7 @@ A modern frontend demo for SmartMove, an Intelligent Transport Management System
 ### 2. Demo Credentials
    
  Email:    admin@smartmove.com
+ 
  Password: admin123
 
  Note: These credentials are provided for demonstration purposes only.
