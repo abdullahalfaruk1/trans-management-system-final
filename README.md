@@ -65,7 +65,7 @@ Page Link: https://abdullahalfaruk1.github.io/trans-management-system-final/
 
 ### 🏗️ Technology Direction
 
-   Frontend
+  #### Frontend
    
    HTML5
    
