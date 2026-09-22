@@ -30,7 +30,8 @@ A modern frontend demo for SmartMove, an Intelligent Transport Management System
 Page Link: https://abdullahalfaruk1.github.io/trans-management-system-final/
 
 
-Note: These credentials are provided for demonstration purposes only.
+
+##### Note: These credentials are provided for demonstration purposes only.
 
 
 
@@ -89,4 +90,4 @@ Note: These credentials are provided for demonstration purposes only.
 
 
 
-  #### NOTE:  Hope for the best for next project...It will be continue.....
+  ##### Note:  Hope for the best for next project...It will be continue.....
