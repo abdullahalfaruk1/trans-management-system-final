@@ -50,16 +50,22 @@ A modern frontend demo for SmartMove, an Intelligent Transport Management System
 
 🔧 Maintenance Management
 
-🏗️ Technology Direction
-   Frontend
-   HTML5
-   CSS3
-   JavaScript
-   Browser LocalStorage
-
 
 Hope for the best for next project...It will be continue.....
 
 💰 Expense Management
 
 📈 Reports & Analytics
+
+
+
+🏗️ Technology Direction
+   Frontend
+   
+   HTML5
+   
+   CSS3
+   
+   JavaScript
+   
+   Browser LocalStorage
